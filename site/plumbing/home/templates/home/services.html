@@ -1,0 +1,13 @@
+<{% extends 'home/base.html'%}
+
+{% block content %}
+
+<h1>{{services.title}}</h1>
+
+{% if services.photo %}
+<p> <img class="img-article-left" src="{{services.photo.url}}"></p>
+{% endif %}
+
+{{services.description|linebreaks}}
+
+{% endblock %}
